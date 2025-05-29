@@ -1,0 +1,147 @@
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: #f9f9f9; /* Matching the home page background */
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center; /* Centered for desktop */
+    min-height: 100vh;
+    padding: 0;
+}
+
+.mobile-container {
+    width: 100%;
+    max-width: 420px;
+    background-color: #ffffff;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Adding subtle shadow */
+    border-radius: 8px; /* Rounded corners for a modern look */
+}
+
+.header {
+    background-color: white; /* Navbar background */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Navbar shadow */
+    color: #3a5795; /* Consistent blue */
+    padding: 15px;
+    text-align: center;
+    border-radius: 8px 8px 0 0; /* Rounded top corners */
+}
+
+.header-main h1 {
+    font-size: 1.5em; /* Slightly larger for better readability */
+    font-weight: bold;
+}
+
+.form-container {
+    padding: 20px;
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center; /* Center content vertically */
+}
+
+.intro-text {
+    font-size: 1.125em; /* 18px */
+    color: #333333;
+    margin-bottom: 25px;
+    line-height: 1.5;
+}
+
+.section-title {
+    font-size: 1em; /* 16px */
+    color: #333333;
+    font-weight: 700;
+    margin-bottom: 20px;
+}
+
+.input-field {
+    position: relative;
+    margin-bottom: 25px;
+}
+
+.input-field label {
+    display: block;
+    font-size: 0.875em; /* 14px */
+    color: #3a5795; /* Blue label text */
+    margin-bottom: 5px;
+    font-weight: 500;
+}
+
+.input-field input {
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    padding: 12px;
+    font-size: 1em;
+    box-sizing: border-box;
+}
+
+.input-field input:focus {
+    border-color: #3a5795; /* Blue focus border */
+    box-shadow: 0 0 5px rgba(58, 87, 149, 0.5);
+}
+
+/* Remove placeholder styles if not needed, as image shows values */
+.input-field input::placeholder {
+    color: #999999;
+}
+
+.submit-btn {
+    background-color: #3a5795; /* Blue button */
+    color: white;
+    padding: 15px;
+    border: none;
+    border-radius: 25px; /* Highly rounded corners */
+    font-size: 1em; /* 16px */
+    font-weight: bold;
+    text-transform: uppercase;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.submit-btn:hover {
+    background-color: #2e4575; /* Darker blue on hover */
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .mobile-container {
+        border-radius: 0; /* Remove rounded corners for mobile */
+        min-height: 100vh;
+    }
+
+    .header {
+        padding: 10px;
+    }
+
+    .form-container {
+        padding: 15px;
+    }
+}
+
+/* Ensure icons are loaded */
+.material-icons {
+  font-family: 'Material Icons';
+  font-weight: normal;
+  font-style: normal;
+  font-size: 24px;  /* Preferred icon size */
+  display: inline-block;
+  line-height: 1;
+  text-transform: none;
+  letter-spacing: normal;
+  word-wrap: normal;
+  white-space: nowrap;
+  direction: ltr;
+
+  /* Support for all WebKit browsers. */
+  -webkit-font-smoothing: antialiased;
+  /* Support for Safari and Chrome. */
+  text-rendering: optimizeLegibility;
+
+  /* Support for Firefox. */
+  -moz-osx-font-smoothing: grayscale;
+
+  /* Support for IE. */
+  font-feature-settings: 'liga';
+}
